@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Traveller</title>
+    <style>
+        /* Import Poppins */
+
+        body{
+            margin: 20px;
+            font-family: "Poppins";
+            background: #d1dedd;
+        }
+        ul , li{
+            padding: 0;
+            list-style-type: none;
+        }
+        h1,h2,h3{
+            color: #767f7e ;
+        }
+        p{
+            color: #828b8a;
+        }
+
+        header{
+            max-width: 1200px;
+            margin: 40px auto;
+            border-bottom: 1px solid #bbc7c7;
+            
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:60px;
+            max-width: 1200px;
+            margin: 20px auto;
+            }
+
+        article.featured{
+            grid-column: span 3;
+            display: grid;   
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            border-bottom: 1px solid #bbc7c7;
+            padding-bottom: 8px;
+
+        }
+        article img{
+            width: 100%;
+            border: 4px solid white;
+            border-radius: 8px;
+            align-items: center;
+        }
+
+        article p, article h3{
+            margin: 20px 10px;
+        }
+        /* Responsive */
+        @media screen  and (max-width: 980px){
+            article
+            {
+                grid-column: span3;
+                display: grid;
+                grid-template-columns: repeat(2*1fr );
+                gap: 60px;
+                align-items: end;
+            }
+        @media screen and (max-width: 980px) {
+            article, article-featured{
+                display: block;
+                margin : 0px 20px;
+            }
+            
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>World Traveller</h1>
+    </header>
+    <main class="grid-container">
+
+        <article class="featured">
+            <img src="img1.jpg"  alt="" >
+            <div>
+                <h2>Balloon Magic</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis ipsa dolorem accusantium blanditiis aperiam perferendis reiciendis facilis numquam quas porro nulla nihil voluptate, nisi accusamus, ullam rerum labore repellendus corrupti. Minima!</p>
+            </div>
+        </article>
+        
+        <article>
+            <img src="img2.jpg" alt="">
+            <div>
+                <h3>Road to Freedom</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quod earum vero maxime esse aliquid nemo consectetur placeat voluptates sit harum! Accusamus?</p>
+            </div>
+        </article>
+
+        <article>
+            <img src="img3.jpg" alt="">
+            <div>
+                <h3>The clear blue</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quod earum vero maxime esse aliquid nemo consectetur placeat voluptates sit harum! Accusamus?</p>
+            </div>
+        </article>
+
+        <article>
+        <img src="img4.jpg" alt="">
+            <div>
+                <h3>Exploration Begins</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis ipsa dolorem accusantium blanditiis aperiam perferendis reiciendis facilis numquam quas porro nulla nihil voluptate, nisi accusamus, ullam rerum labore repellendus corrupti. Minima!</p>
+            </div>
+        </article>
+
+    </main>
+</body>
+</html>
